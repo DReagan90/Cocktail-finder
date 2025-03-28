@@ -72,3 +72,15 @@ button:hover {
     font-size: 0.9em;
     color: #555;
 }
+body.dark-mode .cocktail-card {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode .cocktail-card h3 {
+    color: #fff;
+}
+
+body.dark-mode .instructions {
+    color: #ccc;
+}

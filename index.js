@@ -56,3 +56,4 @@ async function fetchCocktailsByCategory(category) {
                 return detailResponse.json();
             })
         );
+        
