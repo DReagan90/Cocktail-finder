@@ -84,3 +84,9 @@ body.dark-mode .cocktail-card h3 {
 body.dark-mode .instructions {
     color: #ccc;
 }
+@media (max-width: 600px) {
+    .controls {
+        flex-direction: column;
+        align-items: center;
+    }
+}
