@@ -56,4 +56,9 @@ async function fetchCocktailsByCategory(category) {
                 return detailResponse.json();
             })
         );
-        
+        const allDrinks = cocktailDetails.map(detail => detail.drinks[0]);
+        displayCocktails(allDrinks);
+    } catch (error) {
+        console.error('Error fetching cocktails by category:', error);
+    }
+}
