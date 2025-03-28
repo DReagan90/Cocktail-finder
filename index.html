@@ -1,11 +1,30 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cocktail Finder</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <h1>Cocktail Finder</h1>
+    </header>
     
+    <div class="controls">
+        <input type="text" id="search-input" placeholder="Search cocktails...">
+        <button id="search-btn">Search</button>
+        <button id="random-btn">Random Cocktail</button>
+        <button id="mode-toggle">Toggle Dark Mode</button>
+        <select id="category-filter">
+            <option value="">All Categories</option>
+            <!-- Categories will be added by JavaScript -->
+        </select>
+    </div>
+    
+    <div id="cocktail-container"></div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
