@@ -36,13 +36,12 @@ function filterByCategory() {
     }
 }
   
-async function fetchCocktailsByName(name) {
+async function fetchRandomCocktail() {
     try {
-        const response = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${name}`);
+        const response = await fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php');
         const data = await response.json();
         displayCocktails(data.drinks);
     } catch (error) {
-        console.error('Error fetching cocktails:', error);
-        cocktailContainer.innerHTML = '<p>Error fetching cocktails. Please try again.</p>';
+        console.error('Error fetching random cocktail:', error);
     }
 }
