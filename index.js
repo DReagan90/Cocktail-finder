@@ -15,3 +15,15 @@ searchInput.addEventListener('keypress', function(e) {
 });
 fetchCategories();
 fetchPopularCocktails();
+
+function handleSearch() {
+    const searchTerm = searchInput.value.trim();
+    if (searchTerm) {
+        fetchCocktailsByName(searchTerm);
+    }
+}
+
+function toggleDarkMode() {
+    body.classList.toggle('dark-mode');
+    localStorage.setItem('darkMode', body.classList.contains('dark-mode'));
+}
