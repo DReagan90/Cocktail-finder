@@ -63,3 +63,12 @@ button:hover {
     margin-top: 10px;
     color: #2c3e50;
 }
+.ingredients {
+    margin: 10px 0;
+    font-size: 0.9em;
+}
+
+.instructions {
+    font-size: 0.9em;
+    color: #555;
+}
