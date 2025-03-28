@@ -27,3 +27,11 @@ function toggleDarkMode() {
     body.classList.toggle('dark-mode');
     localStorage.setItem('darkMode', body.classList.contains('dark-mode'));
 }
+function filterByCategory() {
+    const category = categoryFilter.value;
+    if (category) {
+        fetchCocktailsByCategory(category);
+    } else {
+        fetchPopularCocktails();
+    }
+}
