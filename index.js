@@ -45,3 +45,14 @@ async function fetchRandomCocktail() {
         console.error('Error fetching random cocktail:', error);
     }
 }
+ 
+async function fetchCocktailsByCategory(category) {
+    try {
+        const response = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=${category}`);
+        const data = await response.json();
+        const cocktailDetails = await Promise.all(
+            data.drinks.map(async drink => {
+                const detailResponse = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${drink.idDrink}`);
+                return detailResponse.json();
+            })
+        );
