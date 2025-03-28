@@ -62,3 +62,19 @@ async function fetchCocktailsByCategory(category) {
         console.error('Error fetching cocktails by category:', error);
     }
 }
+async function fetchCategories() {
+    try {
+        const response = await fetch('https://www.thecocktaildb.com/api/json/v1/1/list.php?c=list');
+        const data = await response.json();
+        
+        // Use array iteration (forEach) to populate categories
+        data.drinks.forEach(category => {
+            const option = document.createElement('option');
+            option.value = category.strCategory;
+            option.textContent = category.strCategory;
+            categoryFilter.appendChild(option);
+        });
+    } catch (error) {
+        console.error('Error fetching categories:', error);
+    }
+}
