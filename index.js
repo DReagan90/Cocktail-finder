@@ -13,3 +13,5 @@ categoryFilter.addEventListener('change', filterByCategory);
 searchInput.addEventListener('keypress', function(e) {
     if (e.key === 'Enter') handleSearch();
 });
+fetchCategories();
+fetchPopularCocktails();
