@@ -35,3 +35,14 @@ function filterByCategory() {
         fetchPopularCocktails();
     }
 }
+  
+async function fetchCocktailsByName(name) {
+    try {
+        const response = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${name}`);
+        const data = await response.json();
+        displayCocktails(data.drinks);
+    } catch (error) {
+        console.error('Error fetching cocktails:', error);
+        cocktailContainer.innerHTML = '<p>Error fetching cocktails. Please try again.</p>';
+    }
+}
