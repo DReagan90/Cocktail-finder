@@ -1,0 +1,74 @@
+{
+  "cocktails": [
+    {
+      "id": 1,
+      "name": "Margarita",
+      "category": "Cocktail",
+      "ingredients": [
+        "1 1/2 oz Tequila",
+        "1/2 oz Triple Sec",
+        "1/2 oz Lime Juice",
+        "Salt (for rim)"
+      ],
+      "instructions": "Rub the rim of the glass with a lime slice and dip in salt. Add tequila, triple sec, and lime juice to a shaker with ice. Shake well and strain into the glass.",
+      "image": "https://www.thecocktaildb.com/images/media/drink/5noda61589575158.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Mojito",
+      "category": "Cocktail",
+      "ingredients": [
+        "2 oz White Rum",
+        "1 oz Lime Juice",
+        "2 teaspoons Sugar",
+        "6 Mint Leaves",
+        "Club Soda"
+      ],
+      "instructions": "Muddle mint leaves and sugar in a glass. Add lime juice and rum, fill with ice, and top with club soda. Stir well.",
+      "image": "https://www.thecocktaildb.com/images/media/drink/jhmi8v1504375026.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Bloody Mary",
+      "category": "Cocktail",
+      "ingredients": [
+        "1 1/2 oz Vodka",
+        "3 oz Tomato Juice",
+        "1/2 oz Lemon Juice",
+        "2 dashes Worcestershire Sauce",
+        "1 dash Hot Sauce",
+        "Salt and Pepper to taste"
+      ],
+      "instructions": "Add all ingredients into a shaker with ice. Shake well and strain into a glass filled with ice.",
+      "image": "https://www.thecocktaildb.com/images/media/drink/8klk6f1589574604.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Whiskey Sour",
+      "category": "Whiskey",
+      "ingredients": [
+        "2 oz Bourbon",
+        "3/4 oz Lemon Juice",
+        "1/2 oz Simple Syrup",
+        "Ice"
+      ],
+      "instructions": "Shake bourbon, lemon juice, and simple syrup with ice. Strain into a glass with ice and garnish with a cherry.",
+      "image": "https://www.thecocktaildb.com/images/media/drink/vsyyvq1483387392.jpg"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Cocktail"
+    },
+    {
+      "id": 2,
+      "name": "Whiskey"
+    },
+    {
+      "id": 3,
+      "name": "Rum"
+    }
+  ]
+}
+ 

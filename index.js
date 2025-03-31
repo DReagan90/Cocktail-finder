@@ -67,7 +67,7 @@ async function fetchCategories() {
         const response = await fetch('https://www.thecocktaildb.com/api/json/v1/1/list.php?c=list');
         const data = await response.json();
         
-        // Use array iteration (forEach) to populate categories
+        
         data.drinks.forEach(category => {
             const option = document.createElement('option');
             option.value = category.strCategory;
